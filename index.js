@@ -9,7 +9,8 @@ function justInvoke(fn){
 // the function's this value. (Make sure to correctly pass the
 // third argument!)
 function setThisWithCall(fn, thisValue, arg) {
-
+  // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call
+  return fn.call(thisValue, arg);
 }
 // setThisWithApply(fn, thisValue, args): Again, invoke the
 // function passed to it, change the this value of that function
