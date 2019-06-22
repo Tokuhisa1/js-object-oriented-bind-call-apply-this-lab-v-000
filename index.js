@@ -18,7 +18,8 @@ function setThisWithCall(fn, thisValue, arg) {
 // function with arguments. You should accomplish all of the above
 // by using apply.
 function setThisWithApply(fn, thisValue, args) {
-
+  // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply
+  return fn.apply(thisValue, args);
 }
 // returnNewFunctionOf(functionToBeCopied, thisValue): Here, we
 // ask you to write a function that returns a copy of the function
