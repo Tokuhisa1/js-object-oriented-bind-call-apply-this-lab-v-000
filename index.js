@@ -26,5 +26,5 @@ function setThisWithApply(fn, thisValue, args) {
 // passed through, but sets the this value of the function's copy.
 function returnNewFunctionOf(functionToBeCopied, thisValue) {
   // var newFunction = functionToBeCopied;
-  return functionToBeCopied.apply(thisValue);
+  // return functionToBeCopied.apply(thisValue);
 }
