@@ -25,7 +25,7 @@ function setThisWithApply(fn, thisValue, args) {
 // ask you to write a function that returns a copy of the function
 // passed through, but sets the this value of the function's copy.
 function returnNewFunctionOf(functionToBeCopied, thisValue) {
-  // var newFunction = functionToBeCopied;
+  // https://stackoverflow.com/questions/1833588/javascript-clone-a-function
   return function() {
     return functionToBeCopied.apply(thisValue);
   };
