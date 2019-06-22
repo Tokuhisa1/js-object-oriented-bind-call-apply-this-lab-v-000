@@ -2,7 +2,7 @@
 // through to it. It also returns the return value of the passed
 // through function.
 function justInvoke(fn){
-
+  return fn();
 }
 // setThisWithCall(fn, thisValue, arg): The function again invokes
 // the function passed to it, but uses the call method to return
